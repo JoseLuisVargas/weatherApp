@@ -3,8 +3,14 @@
   "signatureVersion": 1,
   "xdkVersion": "3400",
   "usesAppDesigner": "true",
+<<<<<<< 213b362eafae6322729371d08eec26d3d2089ddb
   "projectGuid": "20056838-eeee-49c4-a136-a8fe14e9abe8",
   "projectTypeName": "com.intel.xdk.projecttype.jsapp",
   "src": "appDesigner",
+=======
+  "projectGuid": "1d5b2834-0eea-4fc1-8098-1ef9f3062968",
+  "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+  "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
+>>>>>>> Creando Formulario
   "type": "App Designer"
 }
