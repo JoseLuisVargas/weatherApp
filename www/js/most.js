@@ -1,19 +1,19 @@
 $( document ).ready(function() {
                     var $server;
-                    $server = 'http://localhost:1280/xampp/weatherApp/www/';
-                           function Lista(){
+                    $server = 'http://localhost:1280/xampp/weatherApp/www/';              
+	             function hora(){
                            $.ajax({
 
                                type: "get",
                                dataType  : 'html',
-                               url: $server+"/conecta.php",
-                               data: "listaclima",
+                               url: $server+"/hora.php",
+                               data: "fecha",
                                success: function(data) {
-                                    $('listaclima').html(data);
+                                    $('#fecha').html(data);
                                 }
                            });
                     }
 
-                 Lista();
+                 hora();
 
             });

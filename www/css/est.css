@@ -1,0 +1,30 @@
+body
+{
+    background-color:#23A0D8;
+    font-family:"Helvetica",Arial;
+}#contenido
+{
+    text-align: center;
+    
+}
+h1
+{
+    color: #F9FDFD;
+    
+}
+#textoPr
+{
+    background-color: #076D93;
+    color: #FFF;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.80);
+}
+a
+{
+    color: #e44e2d;
+    font-weight: bold;
+    
+}
