@@ -14,6 +14,32 @@ $( document ).ready(function() {
                            });
                     }
 
+                   function clima(){
+                           $.ajax({
+
+                               type: "get",
+                               dataType  : 'html',
+                               url: $server+"/clima.php",
+                               data: "climaA",
+                               success: function(data) {
+                                    $('#climaA').html(data);
+                                }
+                           });
+                    }
+                  function climaR(){
+                           $.ajax({
+
+                               type: "get",
+                               dataType  : 'html',
+                               url: $server+"/climareporte.php",
+                               data: "climaR",
+                               success: function(data) {
+                                    $('#climaR').html(data);
+                                }
+                           });
+                    }
+                 climaR()
+                 clima();
                  hora();
 
             });

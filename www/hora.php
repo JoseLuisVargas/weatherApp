@@ -5,5 +5,5 @@ $hora=date("H:i:s ");
 $anio=date("Y");
 $mes=date("m");
 $dia=date("d");
-echo $fecha."  ".$hora;
+echo $fecha;
 ?>
