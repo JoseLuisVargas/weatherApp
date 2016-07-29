@@ -14,7 +14,9 @@ $ayer3= date('Y-m-d', strtotime('-3 day'));
      $re3 = mysql_query($SQL3, $serve);
  
 ?> 
-   <table width="400" border="0" align="center">
+<form id="form1" name="form1" method="post" action="">
+   <center>
+   <table width="300" border="0">
     <tr>
       <td width="100"><?php
 $t=mysql_result($re1,0,'valor');
@@ -34,10 +36,10 @@ else if ($t<10)
  echo "Llovisna"."</br>";    
 }           
 echo "$ayer1"."</br>";
-echo "Tem: ".mysql_result($re1,0,'valor')."C"."</br>";
+echo "Tem: ".mysql_result($re1,0,'valor')." °C"."</br>";
 echo "Hum: ".mysql_result($re1,0,'valor1')."%"."</br>";
           ?></td>
-      <td width="150"><?php
+      <td width="100"><?php
           $t1=mysql_result($re2,0,'valor');
 if($t1>=15)
 {
@@ -55,11 +57,11 @@ else if ($t1<10)
  echo "Llovisna"."</br>";    
 }           
 echo "$ayer2"."</br>";
-echo "Temperatura: ".mysql_result($re2,0,'valor')."C"."</br>";
-echo "Humedad: ".mysql_result($re2,0,'valor1')."%"."</br>";
+echo "Temp: ".mysql_result($re2,0,'valor')." °C"."</br>";
+echo "Hum: ".mysql_result($re2,0,'valor1')."%"."</br>";
           
           ?></td>
-      <td width="150"><?php 
+      <td width="100"><?php 
           $t2=mysql_result($re3,0,'valor');
 if($t2>=15)
 {
@@ -77,9 +79,11 @@ else if ($t2<10)
  echo "Llovisna"."</br>";    
 }           
 echo "$ayer3"."</br>";
-echo "Temperatura: ".mysql_result($re3,0,'valor')."C"."</br>";
-echo "Humedad: ".mysql_result($re3,0,'valor1')."%"."</br>";
+echo "Temp: ".mysql_result($re3,0,'valor')." °C"."</br>";
+echo "Hum: ".mysql_result($re3,0,'valor1')."%"."</br>";
           
           ?></td>
     </tr>
   </table>
+</center>
+</form>

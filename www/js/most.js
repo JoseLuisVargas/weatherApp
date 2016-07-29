@@ -50,8 +50,21 @@ $( document ).ready(function() {
                                 }
                            });
                     }
+     function clima4(){
+                           $.ajax({
+
+                               type: "get",
+                               dataType  : 'html',
+                               url: $server+"/conecta1.php",
+                               data: "yes",
+                               success: function(data) {
+                                    $('#yes').html(data);
+                                }
+                           });
+                    }
+                 clima4();
                  climaR();
-                 clima3()
+                 clima3();
                  clima();
                  hora();
 
