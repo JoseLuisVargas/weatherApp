@@ -38,7 +38,20 @@ $( document ).ready(function() {
                                 }
                            });
                     }
-                 climaR()
+           function clima3(){
+                           $.ajax({
+
+                               type: "get",
+                               dataType  : 'html',
+                               url: $server+"/climaanterior.php",
+                               data: "climaa3",
+                               success: function(data) {
+                                    $('#climaa3').html(data);
+                                }
+                           });
+                    }
+                 climaR();
+                 clima3()
                  clima();
                  hora();
 

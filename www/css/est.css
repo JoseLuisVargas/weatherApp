@@ -32,7 +32,7 @@ h1
     padding: 20px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.80);
 }
-#table tr td {
+#table {
 	text-align: center;
 }
 a
