@@ -62,6 +62,19 @@ $( document ).ready(function() {
                                 }
                            });
                     }
+    function reporte(){
+                           $.ajax({
+
+                               type: "get",
+                               dataType  : 'html',
+                               url: $server+"/ejemplo3.php",
+                               data: "repor",
+                               success: function(data) {
+                                    $('#repor').html(data);
+                                }
+                           });
+                    }
+                 reporte()
                  clima4();
                  climaR();
                  clima3();
