@@ -74,11 +74,38 @@ $( document ).ready(function() {
                                 }
                            });
                     }
-                 reporte()
+    function prendas(){
+                           $.ajax({
+
+                               type: "get",
+                               dataType  : 'html',
+                               url: $server+"/prenda.php",
+                               data: "pre",
+                               success: function(data) {
+                                    $('#pre').html(data);
+                                }
+                           });
+                    }
+    function bebidas(){
+                           $.ajax({
+
+                               type: "get",
+                               dataType  : 'html',
+                               url: $server+"/verbebidas.php",
+                               data: "bebi",
+                               success: function(data) {
+                                    $('#bebi').html(data);
+                                }
+                           });
+                    }
+    
+                 reporte();
                  clima4();
                  climaR();
                  clima3();
                  clima();
                  hora();
+                 prendas();
+                 bebidas();
 
             });
