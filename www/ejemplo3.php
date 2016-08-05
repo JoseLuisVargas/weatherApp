@@ -28,7 +28,7 @@ $(function () {
 date_default_timezone_set("America/Bogota");
 $hoy= date('Y-m-d');
 $ayer3= date('Y-m-d', strtotime('-3 day'));
-$sql=mysql_query("select * from temperatura where timestamp>='$ayer3' and timestamp<='$hoy'  ");
+$sql=mysql_query("select * from temperatura where timestamp>='$ayer3' and timestamp<='$hoy'");
 while($res=mysql_fetch_array($sql)){			
 ?>
 			

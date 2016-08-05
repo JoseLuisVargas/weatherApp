@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "20056838-eeee-49c4-a136-a8fe14e9abe8",
-      "lastModifiedDate": 1468617238287,
+      "lastModifiedDate": 1470428654253,
       "creationDate": 1468616759097
     },
     "XDK-app-designer": "true",
@@ -92,7 +92,7 @@
         },
         "isActive_": true,
         "appName_": "climaunajma",
-        "appID_": "xdk.intel.blank.ad.template.crosswalk",
+        "appID_": "clima.unajma_weather_app",
         "appAccess_": {
           "mode": "whitelist",
           "network": [
@@ -113,7 +113,7 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
+        "certificateId_": "JuyxJWTDakmWmnfbUyvCaw2",
         "cordovaCLIVersion_": "5.4.1",
         "crosswalkVersion_": "16",
         "appVersion_": "0.0.1",
