@@ -8,12 +8,11 @@ $ayer3= date('Y-m-d', strtotime('-3 day'));
     $SQL1 = "SELECT * FROM temperatura WHERE timestamp='$ayer1' ";
     $SQL2 = "SELECT * FROM temperatura WHERE timestamp='$ayer2' ";
     $SQL3 = "SELECT * FROM temperatura WHERE timestamp='$ayer3' ";
+    $SQL3 = "SELECT * FROM temperatura WHERE timestamp='$ayer3' ";
 
      $re1 = mysql_query($SQL1, $serve);
      $re2 = mysql_query($SQL2, $serve);
      $re3 = mysql_query($SQL3, $serve);
-     $re5 = mysql_query($SQL3, $serve);
- 
 ?> 
 <form id="form1" name="form1" method="post" action="">
    <center>
